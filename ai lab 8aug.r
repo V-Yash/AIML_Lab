@@ -1,0 +1,19 @@
+Employees = data.frame(
+  Employee_ID=c("007","23","45"),
+  Employee_Name=c("yash","sameer","manu"),
+  Salary=c(12,12,12),
+  DOJ=c("04-05-1999","04-05-1999","04-05-1999"))
+print(Employees)
+str(Employees)
+new<-data.frame(Employees$Employee_ID,Employees$Salary)
+print(new)
+new1<-Employees[2,]
+print(new1)
+new1<-Employees[2:3,]
+print(new1)
+new1<-Employees[c(2:3),c(1:4)]
+print(new1)
+x=list(4,"noddy",12,"04-05-1999")
+rbind(Employees,x)
+w<-c("jpr","delhi","alwar")
+cbind(Employees,Address=w)
